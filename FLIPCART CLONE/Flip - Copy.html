@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .flipkart-text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .explore-plus {
+            color: yellow;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #2874f0;
+            border: 1px solid #2874f0;
+        }
+
+        .btn-white:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-menu a {
+            color: #2874f0 !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1 !important;
+        }
+
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover;
+        }
+    </style>
+</head>
+<div>
+
+    <!-- Responsive Container for Form and Navbar -->
+    <div class="container-fluid px-4 py-2" style="background-color: #2874f0;">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div>
+                <span class="flipkart-text">Flipkart</span> 
+                <span class="explore-plus">Explore Plus</span>
+            </div>
+
+            <!-- Form Section -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-white" type="submit">Search</button>
+            </form>
+
+            <!-- Navbar Section -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse d-flex justify-content-end align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex flex-row align-items-center">
+                        
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Flipkart Zone</a></li>
+                                <li><a class="dropdown-item" href="#">Orders</a></li>
+                                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="#">Rewards</a></li>
+                                <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Become a Seller</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="7.jpg" class="d-block w-100" alt="Food Mixer">
+            </div>
+            <div class="carousel-item">
+                <img src="8.jpg" class="d-block w-100" alt="Laptop">
+            </div>
+            <div class="carousel-item">
+                <img src="9.jpg" class="d-block w-100" alt="See No Evil">
+            </div>
+            <div class="carousel-item">
+                <img src="television-5017870_1280.jpg" class="d-block w-100" alt="See No Evil">
+            </div>
+            <div class="carousel-item">
+                <img src="interior-1961070_1280.jpg" class="d-block w-100" alt="See No Evil">
+            </div>
+            <div class="carousel-item">
+                <img src="furniture-998265_1280.jpg" class="d-block w-100" alt="See No Evil">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="container my-3">
+        <div class="row justify-content-between text-center">
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="food-mixer-413737_960_720.jpg" alt="Image 2" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Food Mixer Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="laptop-1483974_1280.jpg" alt="Image 3" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Laptop Rs.50000 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="see-no-evil-3444212_960_720.jpg" alt="Image 4" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">See No Evil</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="time-3091031_960_720.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Electronics</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="catwalk-1840941_1280.jpg" alt="Image 6" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Fashion </p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="boxes-1834416_1280.jpg" alt="Image 2" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Fruits Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="camera-4833557_1280.jpg" alt="Image 3" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Camera Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="groceries-1343141_1280.jpg" alt="Image 4" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Vegetables Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="grocery-936058_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Beverage Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="tshirt-8726721_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Shirts Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="woman-2799490_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Jeans Rs.500 INR</p>
+            </div>
+            
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="electronics-2002813_1280.jpg" alt="Image 6" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Trimmer Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="padlock-2084359_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Lock Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="bag-1052370_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Bag Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="bag-1854148_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Bags Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="washing-machine-5423359_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">WashingMachine Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="ipad-600642_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">Ipad Rs.500 INR</p>
+            </div>
+            <div class="col-2">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded" src="bear-2631262_1280.jpg" alt="Image 5" style="object-fit: cover;">
+                </div>
+                <p class="mt-2">TeddayBear Rs.500 INR</p>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer Section -->
+<footer>
+    <div class="container text-success">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Group Companies</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
